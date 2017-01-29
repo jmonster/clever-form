@@ -1,29 +1,30 @@
 <h1>Form Demo</h1>
 
 <div class="clever-form">
-  <div class="Grid Grid--full">
-    {{clever-input label="Photo" name="photoUrl" placeholder="https://images.com/your-image.jpg"}}
+  <div class="row">
+    {{clever-input class="col-xs-12"  label="Photo" name="photoUrl" placeholder="https://images.com/your-image.jpg"}}
   </div>
-  <div class="Grid Grid--fit">
-    {{clever-input maxlength=6 style='flex:0; width:6rem;' label="Prefix" name="namePrefix" placeholder="Prefix"}}
-    {{clever-input label="First Name" name="firstName" placeholder="First Name"}}
-    {{clever-input label="Last Name" name="lastName" placeholder="Last Name"}}
+  <div class="row">
+    {{clever-input class="col-xs-2" label="Prefix" name="namePrefix" placeholder="Prefix"}}
+    {{clever-input class="col-xs-10" label="First Name" name="firstName" placeholder="First Name"}}
   </div>
-  <div class="Grid Grid--full">
-    {{clever-input label="Nickname" name="nickname" placeholder="Nickname"}}
+  <div class="row">
+  {{clever-input class="col-xs-10" label="Last Name" name="lastName" placeholder="Last Name"}}
+  {{clever-input class="col-xs-2" label="Suffix" name="nameSuffix" placeholder="Suffix"}}
   </div>
-  <div class="Grid Grid--full">
-    {{clever-input label="Home Email" name="email" placeholder="Home Email"}}
+  <div class="row">
+    {{clever-input class="col-xs-12" label="Nickname" name="nickname" placeholder="Nickname"}}
   </div>
-  <div class="Grid Grid--full">
-    {{clever-input label="Work Email" name="workEmail" placeholder="Work Email"}}
+  <div class="row">
+    {{clever-input class="col-xs-6" label="Home Email" name="email" placeholder="Home Email"}}
+    {{clever-input class="col-xs-6" label="Work Email" name="workEmail" placeholder="Work Email"}}
   </div>
-  <div class="Grid Grid--1of2">
-    {{clever-input label="Home Phone" name="homePhone" placeholder="Home Phone"}}
-    {{clever-input label="Cell Phone" name="cellPhone" placeholder="Cell Phone"}}
+  <div class="row">
+    {{clever-input class="col-xs-6" label="Home Phone" name="homePhone" placeholder="Home Phone"}}
+    {{clever-input class="col-xs-6" label="Cell Phone" name="cellPhone" placeholder="Cell Phone"}}
   </div>
-  <div class="Grid Grid--1of2">
-    {{clever-input label="Birthday" name="birthday" placeholder="Birthday"}}
-    {{clever-input label="Anniversary" name="anniversary" placeholder="Anniversary"}}
+  <div class="row">
+    {{clever-input class="col-xs-6" label="Birthday" name="birthday" placeholder="Birthday"}}
+    {{clever-input class="col-xs-6" label="Anniversary" name="anniversary" placeholder="Anniversary"}}
   </div>
 </div>

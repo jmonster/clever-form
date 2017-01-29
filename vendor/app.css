@@ -5,13 +5,20 @@
 
 input { padding: 0; margin: 0; }
 
-.clever-form > .Grid .Grid-cell {
-  border-bottom: 1px #aaa solid;
-  padding: 0.2rem !important;
+.clever-form > .row .box {
+  border-bottom: 1px #999 solid;
 }
 
-.Grid > .clever-input:not(:last-child) {
-  border-right: 1px #aaa solid;
+.clever-form > .row:first-child .box {
+  border-top: 1px #999 solid;
+}
+
+.row > .clever-input:not(:last-child) {
+  border-right: 1px #999 solid;
+}
+
+.row > .clever-input:not(:first-child) {
+  padding: 0.2rem !important;
 }
 
 .clever-input {
@@ -23,18 +30,18 @@ input { padding: 0; margin: 0; }
 .clever-input label {
   order: 1;
   font-size: 0.8rem;
-  color: #aaa;
+  color: #777;
   visibility: hidden;
 }
 .clever-input input {
   order: 2;
-  color: black;
+  color: #333;
   background-color: transparent;
   border: none;
   font-size: 1.2rem;
 }
 .clever-input input::-webkit-input-placeholder {
-  color: #aaa;
+  color: #bbb;
 }
 .clever-input input:focus {
   outline: none;

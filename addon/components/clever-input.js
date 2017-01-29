@@ -1,7 +1,7 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  classNames: ['clever-input', 'Grid-cell'],
+  classNames: ['clever-input', 'box'],
   attributeBindings: ['style'],
 
   classWhenActive: Ember.computed('value', function() {
